@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Black+Ops+One&family=Great+Vibes&family=Lily+Script+One&family=Pinyon+Script&family=Rampart+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Black+Ops+One&family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=Lily+Script+One&family=Pinyon+Script&family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="{%static 'css/log.css'%}" type="text/css">
+
+    <!-- jquery   -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   
+</head>
+
+<body>
+
+   
+
+        <div class="container">
+
+            <div class="header">
+                <div class="nav">
+                    <a href="about_us" class="nav-item">About</a>
+                    <a href="tel:8111953006" class="nav-item">Contact</a>
+                    <a href="signup_page" class="nav-item_signup">SignUp</a>
+                </div>
+            </div>
+
+
+            <form class="login" action="login" method="POST" id="login_form">
+                    
+                {%csrf_token%}
+
+                <input type="text" name="username" placeholder="Username" class="input_text" required>
+                <input type="password" name="password" placeholder="Password" class="input_text" required>
+                <input type="submit" value="LOGIN" class="log_button">
+
+
+                
+
+            </form>
+
+            <div id="invalid">invalid username or password</div>
+
+
+
+            <div class="signup">
+                <p>It's free <span class="span1" onclick="window.location.href='signup_page'">SignUp</span> now <span class="span2"> & </span><span class="span3">GET 50% DISCOUNT ON YOUR FIRST BOOKING</span></p>
+            </div>
+
+            
+           
+
+            <div class="main">
+                
+                <img src="static/images/hero_img.svg" alt="">
+                
+                <div class="shop_name">
+                    <h1>VISAKH</h1>
+                    <h1>BEAUTY SPA</h1>
+                    <h3>UNISEX SPA</h3>
+                </div>               
+    
+            </div>
+
+
+            
+
+            <div class="main"> 
+
+                <img src="static/images/thinking.svg" alt="">
+                
+                <div class="what_we_offer">
+                    <h1>WHAT WE</h1>
+                    <h1>OFFER..?</h1>
+                    
+                </div>               
+    
+            </div>
+
+           
+
+            <div class="main"> 
+
+                <img src="static/images/image 2.svg" alt="">
+                
+                <div class="what_we_offer">
+                    <h1>ALL KIND OF</h1>
+                    <h1>MASSAGES</h1>
+                    
+                </div>               
+    
+            </div>
+
+           
+
+            <div class="main"> 
+
+                <img src="static/images/image 3.svg" alt="">
+                
+                <div class="what_we_offer">
+                    <h1>AESTHETIC</h1>
+                    <h1>HAIR CUTS</h1>
+                    
+                </div>               
+    
+            </div>
+
+
+           
+
+            <div class="main"> 
+
+                <img src="static/images/image 4.svg" alt="">
+                
+                <div class="what_we_offer">
+                    <h1>WEDDING</h1>
+                    <h1>MAKEUP</h1>
+                    
+                </div>               
+    
+            </div>
+
+
+            
+
+
+
+            <div class="footer">
+                <div class="social_icons">
+                   
+                    <a href="https://www.instagram.com/vipinsasidharan"><img src="static/icons/Instagram - Negative.svg" alt="" class="icons"></a> 
+
+                    <a href="https://wa.me/8111953006"><img src="static/icons/whatsapp.svg" alt="" class="icons"></a>
+                    
+                    <a href="https://www.facebook.com/Vysakh beauty parlor"><img src="static/icons/facebook.svg" alt="" class="icons"></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    <!-- my javascript -->
+
+    <script src="{%static 'js/log.js'%}"></script>
+
+
+</body>
+
+</html>
